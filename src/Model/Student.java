@@ -1,7 +1,6 @@
-import java.util.Objects;
-import java.util.Scanner;
+package Model;
 
-public class Students {
+public class Student {
     //姓名
     private String name;
     //学号
@@ -26,11 +25,15 @@ public class Students {
     private boolean graduated;
 
 
-    public Students() {
+    public Student(String name,String studentID,char gender,int age,float height,double weight,String number,String home,int grade,String classes,boolean graduated) {
+        this.name = name;
+    }
+
+    public Student() {
         System.out.println("这是一个没用的无参构造方法");
     }
 
-    public Students(int num) {
+    public Student(int num) {
         System.out.println("这是一个有参构造方法，参数为" + num);
     }
 
